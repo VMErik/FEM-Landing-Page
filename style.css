@@ -1,0 +1,136 @@
+:root {
+    --violet: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%);
+    --white: #fff
+}
+
+body {
+    display: grid;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--violet);
+    background-image: url(images/bg-desktop.svg);
+    background-position: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    width: 90%;
+    height: 100vh;
+    grid-template-areas: "head head" "content content" "footer footer";
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+.header {
+    grid-area: head;
+    width: 100%;
+    justify-content: center;
+    padding-top: 40px;
+    padding-left: 20px;
+}
+
+.content {
+    grid-area: content;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    gap: 60px;
+    margin-bottom: 20px;
+}
+
+.content__image {
+    width: 50%;
+    display: flex;
+}
+
+.content__image img {
+    width: 100%;
+    height: 100%;
+}
+
+.content__text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 40%;
+    color: var(--white);
+}
+
+.content__text h1 {
+    font-size: 40px;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.content__text p {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.content__text button {
+    width: 200px;
+    background-color: var(--white);
+    color: var(--violet);
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 50px;
+    padding: 15px
+}
+
+.content__text button:hover {
+    background-color: var(--soft-magenta);
+    color: var(--white);
+    cursor: pointer;
+}
+
+footer {
+    grid-area: footer;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+footer i {
+    color: var(--white);
+    border: 1px solid var(--white);
+    padding: 20px;
+    border-radius: 100px
+}
+
+footer i:hover {
+    color: var(--soft-magenta);
+    border: 1px solid var(--soft-magenta);
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+    .header {
+        padding: 0px;
+    }
+    .content {
+        flex-direction: column;
+        padding: 40px 0;
+    }
+    .content__image {
+        width: 100%;
+    }
+    .content__text {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    .content__text button {
+        margin: auto;
+    }
+    footer {
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+}
