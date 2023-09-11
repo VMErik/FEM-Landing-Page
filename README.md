@@ -14,7 +14,7 @@ Users should be able to:
 
 The are the different solutions for the different scenarios.
 
-![](./design/solution_desktop.PNG.PNG)
+![](./design/solution_desktop.PNG)
 
 ![](./design/solution_mobile.PNG)
 
