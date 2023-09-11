@@ -20,7 +20,7 @@ The are the different solutions for the different scenarios.
 
 ### Links
 
-- Live Site URL: [Live Site on Vercel](https://your-live-site-url.com)
+- Live Site URL: [Live Site on Vercel](https://fem-landing-page.vercel.app/)
 
 ### Built with
 
